@@ -1,0 +1,23 @@
+{
+  "name": "cuadro_1",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:http & npm run stylus:watch",
+    "start:http": "http-server public",
+    "stylus:once": "stylus ./public/stylus/main.styl --out ./public/css/style.css",
+    "stylus:watch": "stylus --watch ./public/stylus/main.styl --out ./public/css/style.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:irawachaloco/cuadro_1.git"
+  },
+  "author": "omar ponce",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "stylus": "^0.54.5"
+  }
+}
